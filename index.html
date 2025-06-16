@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>جدول 30×30 أرقام ملونة</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      padding: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      table-layout: fixed;
+      width: 100%;
+      max-width: 900px;
+    }
+    td {
+      border: 1px solid #333;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 12px;
+      user-select: none;
+      transition: background-color 0.3s;
+    }
+    tr:nth-child(even) td {
+      background-color: #f2f2f2;
+    }
+    tr:hover td {
+      background-color: #cce5ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">جدول 30×30 أرقام ملونة</h2>
+
+  <table id="myTable"></table>
+
+  <script>
+    function getRandomColor() {
+      // توليد لون عشوائي بصيغة HEX
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    const table = document.getElementById('myTable');
+    let count = 1;
+
+    for (let i = 0; i < 30; i++) {
+      const tr = document.createElement('tr');
+      for (let j = 0; j < 30; j++) {
+        const td = document.createElement('td');
+        td.textContent = count++;
+        td.style.color = getRandomColor(); // نعطي كل رقم لون مختلف
+        tr.appendChild(td);
+      }
+      table.appendChild(tr);
+    }
+  </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>جدول 30×30 أرقام ملونة</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      padding: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      table-layout: fixed;
+      width: 100%;
+      max-width: 900px;
+    }
+    td {
+      border: 1px solid #333;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 12px;
+      user-select: none;
+      transition: background-color 0.3s;
+    }
+    tr:nth-child(even) td {
+      background-color: #f2f2f2;
+    }
+    tr:hover td {
+      background-color: #cce5ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">جدول 30×30 أرقام ملونة</h2>
+
+  <table id="myTable"></table>
+
+  <script>
+    function getRandomColor() {
+      // توليد لون عشوائي بصيغة HEX
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    const table = document.getElementById('myTable');
+    let count = 1;
+
+    for (let i = 0; i < 30; i++) {
+      const tr = document.createElement('tr');
+      for (let j = 0; j < 30; j++) {
+        const td = document.createElement('td');
+        td.textContent = count++;
+        td.style.color = getRandomColor(); // نعطي كل رقم لون مختلف
+        tr.appendChild(td);
+      }
+      table.appendChild(tr);
+    }
+  </script>
+
+</body>
+</html>
+  
+</body>
+
